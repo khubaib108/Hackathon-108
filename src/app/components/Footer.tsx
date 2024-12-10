@@ -8,59 +8,59 @@ import pin from "../../../public/pin.png";
 
 export default function Footer() {
   return (
-    <div className="w-[1440px] h-[331px] bg-black items-center">
-      <div className="w-[1372px] h-[213px] flex justify-between">
+    <footer className="bg-black">
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div className="flex flex-wrap justify-between items-start gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 w-full sm:w-auto">
+            <ul className="text-white text-xs space-y-4">
+              <li>FIND A STORE</li>
+              <li>BECOME A MEMBER</li>
+              <li>SIGN UP FOR EMAIL</li>
+              <li>SEND US FEEDBACK</li>
+              <li>STUDENT DISCOUNTS</li>
+            </ul>
 
-        <div className="w-[1029px] h-[213px] ml-10 py-10 flex gap-44">
-          <div className="text-white text-[10px]">
-            <div className="pb-5">FIND A STORE</div>
-            <div className="pb-5">BECOME A MEMBER</div>
-            <div className="pb-5">SIGN UP FOR EMAIL</div>
-            <div className="pb-5">SEND US FEEDBACK</div>
-            <div className="pb-5">STUDENT DISCOUNTS</div>
+            <ul className="text-xs space-y-3">
+              <li className="text-white">GET HELP</li>
+              <li className="text-gray-400">Order Status</li>
+              <li className="text-gray-400">Delivery</li>
+              <li className="text-gray-400">Returns</li>
+              <li className="text-gray-400">Payment Options</li>
+              <li className="text-gray-400">Contact Us on Nike.com inquiries</li>
+              <li className="text-gray-400">Contact Us on All other inquiries</li>
+            </ul>
+
+            <ul className="text-xs space-y-3">
+              <li className="text-white">ABOUT NIKE</li>
+              <li className="text-gray-400">News</li>
+              <li className="text-gray-400">Careers</li>
+              <li className="text-gray-400">Investors</li>
+              <li className="text-gray-400">Sustainability</li>
+            </ul>
           </div>
 
-          <div className="text-[10px]">
-            <div className="text-white pb-4">GET HELP</div>
-            <div className="text-[#757575] pb-4">Order Status</div>
-            <div className="text-[#757575] pb-4">Delivery</div>
-            <div className="text-[#757575] pb-4">Returns</div>
-            <div className="text-[#757575] pb-4">Payment Options</div>
-            <div className="text-[#757575] pb-4">Contact Us on Nike.com inquiries</div>
-            <div className="text-[#757575] pb-4">Contact Us on All other inquiries</div>
-          </div>
-
-          <div className="text-[10px]">
-            <div className="text-white pb-4">ABOUT NIKE</div>
-            <div className="text-[#757575] pb-4">News</div>
-            <div className="text-[#757575] pb-4">Careers</div>
-            <div className="text-[#757575] pb-4">Investors</div>
-            <div className="text-[#757575] pb-4">Sustainability</div>
+          <div className="flex gap-4">
+            <Image src={twitter} alt="twitter" className="h-6 w-6" />
+            <Image src={facebook} alt="facebook" className="h-6 w-6" />
+            <Image src={youtube} alt="youtube" className="h-6 w-6" />
+            <Image src={insta} alt="insta" className="h-6 w-6" />
           </div>
         </div>
 
-        <div className="flex -mt-28 gap-4">
-          <Image src={twitter} alt="twitter" />
-          <Image src={facebook} alt="facebook" />
-          <Image src={youtube} alt="youtube" />
-          <Image src={insta} alt="insta" />
+        <div className="border-t border-gray-700 mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center text-xs">
+          <div className="flex items-center gap-2 mb-4 sm:mb-0">
+            <Image src={pin} alt="pin" className="h-4 w-3" />
+            <span className="text-white">India</span>
+            <span className="text-gray-400">©2023 Nike, Inc. All Rights Reserved</span>
+          </div>
+          <div className="flex gap-4 text-gray-400">
+            <span>Guides</span>
+            <span>Terms of Sales</span>
+            <span>Terms of Use</span>
+            <span>Nike Privacy Policy</span>
+          </div>
         </div>
       </div>
-
-      <div className="w-[1372px] h-[62px] mt-16 ml-5 flex justify-between">
-        <div className="flex gap-2 items-center">
-          <Image src={pin} alt="pin" className="h-[13.12px] w-[9.38px]" />
-          <h2 className="text-white">India</h2>
-          <div className="text-[#757575]">©2023 Nike, Inc. All Rights Reserved</div>
-        </div>
-
-        <div className="text-[#757575] flex gap-10">
-          <div>Guides</div>
-          <div>Terms of Sales</div>
-          <div>Terms of Use</div>
-          <div>Nike Privacy Policy</div>
-        </div>
-      </div>
-    </div>
+    </footer>
   );
 }
